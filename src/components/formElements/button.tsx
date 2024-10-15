@@ -1,10 +1,11 @@
 import { Button as MuiButton } from "@mui/material";
 import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
 
-export  const ButtonContained = () => {
+export  const ButtonContained = ({ setname }: { setname: string }) => {
+  console.log(setname)
   return (
     <div>
-      <MuiButton variant="contained">Contained</MuiButton>
+      <MuiButton variant="contained" sx={{backgroundColor:"#ffd814",color:"black"}} fullWidth>{setname}</MuiButton>
     </div>
   );
 };

@@ -4,10 +4,10 @@ import { ButtonContained, ButtonOutlined, Calender, Checkbox, Closebutton, Dropd
 export const FormElements = () => {
   return (
     <>
-        <h1>
+        {/* <h1>
             Butoon contained
-            <ButtonContained/>
-        </h1>
+            <ButtonContained />
+        </h1> */}
 
         <h1>
             Button outlined

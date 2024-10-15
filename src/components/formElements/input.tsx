@@ -1,9 +1,21 @@
-import { TextField } from "@mui/material";
+import TextField from '@mui/material/TextField';
 
 export const Input = () => {
   return (
     <>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+<TextField 
+    fullWidth 
+  id="outlined-basic" 
+  variant="outlined" 
+
+  InputProps={{
+    sx: {
+      "& .MuiInputBase-input": {
+        padding: "4px",
+      }
+    }
+  }}
+/>
     </>
   );
 };
