@@ -1,21 +1,25 @@
 import React from "react";
-import { Box, TextField, Typography, Button, Link, Divider   } from "@mui/material";
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import { styled } from '@mui/material/styles';
+import {
+  Box,
+  TextField,
+  Typography,
+  Button,
+  Link,
+  Divider,
+} from "@mui/material";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import { styled } from "@mui/material/styles";
 
-
-
-const Root = styled('div')(({ theme }) => ({
-  width: '100%',
+const Root = styled("div")(({ theme }) => ({
+  width: "100%",
   ...theme.typography.body2,
   color: theme.palette.text.secondary,
-  '& > :not(style) ~ :not(style)': {
+  "& > :not(style) ~ :not(style)": {
     marginTop: theme.spacing(2),
   },
 }));
 
 export const Login = () => {
- 
   return (
     <>
       {/* <Box sx={{ backgroundColor: "#ffff", height: "100%", width: "100%" }}>
@@ -67,7 +71,7 @@ export const Login = () => {
             height: "248px",
             borderRadius: "8px",
             marginTop: "20px",
-            marginBottom: '24px'
+            marginBottom: "24px",
           }}
         >
           <Box
@@ -101,7 +105,7 @@ export const Login = () => {
                 background: "#ffd100",
                 color: "#0F1111",
                 marginTop: "13px",
-                marginBottom: '30px'
+                marginBottom: "30px",
               }}
             >
               <Typography
@@ -111,45 +115,61 @@ export const Login = () => {
                 Continue
               </Typography>
             </Button>
-            <Box sx={{display: 'flex', alignItems: 'center'}}>
-            <ArrowRightIcon sx={{color: 'black'}}/>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <ArrowRightIcon sx={{ color: "black" }} />
               <Link href="#" sx={{ color: "blue" }}>
-                <Typography component={'span'} sx={{ fontSize: "12px" }}>   Need help?</Typography>
+                <Typography component={"span"} sx={{ fontSize: "12px" }}>
+                  {" "}
+                  Need help?
+                </Typography>
               </Link>
             </Box>
-            
-            
           </Box>
-
         </Box>
-        <Root sx={{width: "350px",}}>
-          <Divider ><Typography sx={{color: '#767676', fontWeight: '400', fontSize: '12px'}}>New to Amazon?</Typography></Divider>
+        <Root sx={{ width: "350px" }}>
+          <Divider>
+            <Typography
+              sx={{ color: "#767676", fontWeight: "400", fontSize: "12px" }}
+            >
+              New to Amazon?
+            </Typography>
+          </Divider>
         </Root>
         <Button
-        variant="contained" disableElevation
-              fullWidth
-              sx={{
-                width: '350px',
-                backgroundColor: "#e7e9ec",
-                color: "#0F1111",
-                marginTop: "13px",
-                marginBottom: '30px',
-                borderRadius: '3px'
-              }}
-            >
-              <Typography
-                component={"span"}
-                sx={{ fontSize: "10px",lineHeight: '29px', fontWeight: "500", }}
-              >
-                         Create your Amazon account
-              </Typography>
-            </Button>
-             
-       
-
+          variant="contained"
+          disableElevation
+          fullWidth
+          sx={{
+            width: "350px",
+            backgroundColor: "#e7e9ec",
+            color: "#0F1111",
+            marginTop: "13px",
+            marginBottom: "30px",
+            borderRadius: "3px",
+          }}
+        >
+          <Typography
+            component={"span"}
+            sx={{ fontSize: "10px", lineHeight: "29px", fontWeight: "500" }}
+          >
+            Create your Amazon account
+          </Typography>
+        </Button>
       </Box>
-      <Box sx={{display: 'flex', justifyContent: 'center', backgroundColor: '#80808017', height: '315px', }}>
-        <Typography sx={{paddingTop: '10%', fontSize: '11px', color: '#555555'}}>  © 1996-2024, Amazon.com, Inc. or its affiliates</Typography>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          backgroundColor: "#80808017",
+          height: "315px",
+        }}
+      >
+        <Typography
+          sx={{ paddingTop: "10%", fontSize: "11px", color: "#555555" }}
+        >
+          {" "}
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </Typography>
       </Box>
     </>
   );
