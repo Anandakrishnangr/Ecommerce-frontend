@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, TextField, Typography, Button, Link } from "@mui/material";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 export const Login = () => {
   return (
@@ -30,22 +31,81 @@ export const Login = () => {
           </Grid>
         </Box>
       </Box> */}
-      <Box sx={{ backgroundColor: "#ffff", width: "100%" ,padding: "16px 0px",display:'flex', alignItems: 'center', flexDirection: 'column'  }}>
+      <Box
+        sx={{
+          backgroundColor: "#ffff",
+          width: "100%",
+          padding: "16px 0px",
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <img
+          style={{ width: "170px", height: "30px" }}
+          src="https://m.media-amazon.com/images/G/31/rainier/nav/sc-unified._CB485930462_.png"
+          alt="logo"
+        />
 
-        
-          <img
-            style={{ width: "170px", height: "30px" }}
-            src="https://m.media-amazon.com/images/G/31/rainier/nav/sc-unified._CB485930462_.png"
-            alt="logo"
-          />
-        
-        <Box sx={{ border: "1px solid #ddd" , width: '350px', height: '248px', borderRadius: '8px', marginTop: '20px', }}>
-          <Box sx={{color: 'black', padding: '14px 28px' }}>
-            <Typography sx={{fontSize: '28px', fontWeight: '500',  fontFamily: 'Arial,sans-serif'}} component={'h1'}>Sign-In</Typography>
-            <Typography >Email or mobile phone number</Typography>  
+        <Box
+          sx={{
+            border: "1px solid #ddd",
+            width: "350px",
+            height: "248px",
+            borderRadius: "8px",
+            marginTop: "20px",
+          }}
+        >
+          <Box
+            sx={{
+              color: "black",
+              padding: "14px 28px",
+              fontFamily: "Arial,sans-serif",
+              lineHeight: "2.2",
+            }}
+          >
+            <Typography
+              component={"h1"}
+              sx={{ fontSize: "28px", fontWeight: "500" }}
+            >
+              Sign-In
+            </Typography>
+            <Typography
+              component={"span"}
+              sx={{
+                fontSize: "13px",
+                fontWeight: "700",
+                padding: "0px 0px 2px 2px",
+              }}
+            >
+              Email or mobile phone number
+            </Typography>
+            <TextField fullWidth size="small"></TextField>
+            <Button
+              fullWidth
+              sx={{
+                background: "#ffd100",
+                color: "#0F1111",
+                marginTop: "13px",
+                marginBottom: '30px'
+              }}
+            >
+              <Typography
+                component={"span"}
+                sx={{ fontSize: "11px", fontWeight: "500" }}
+              >
+                Continue
+              </Typography>
+            </Button>
+              <Link href="#" sx={{ color: "blue" }}>
+                <Typography component={'span'} sx={{ fontSize: "12px" }}>  <ArrowRightIcon/>  Need help?</Typography>
+              </Link>
+            
           </Box>
+
         </Box>
+        
       </Box>
-    </> 
+    </>
   );
 };
