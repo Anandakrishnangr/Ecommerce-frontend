@@ -92,7 +92,7 @@ export const Login = () => {
                 padding: "0px 0px 2px 2px",
               }}
             >
-              Email or mobile phone number
+              Enter yoyr password
             </Typography>
             <TextField fullWidth size="small"></TextField>
             <Button
