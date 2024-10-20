@@ -1,9 +1,9 @@
 import { TextField } from "@mui/material";
 
 export const Input = () => {
-  return (
-    <>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-    </>
-  );
+  return <TextField id="outlined-basic" label="Outlined" variant="outlined" />
 };
+
+export const InputForAccount = () => {
+  return <TextField fullWidth size="small"/>
+}

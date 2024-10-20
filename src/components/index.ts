@@ -7,7 +7,10 @@ export * from "./formElements/fileUpload"
 export * from "./formElements/radio"
 export * from "./formElements/rangeslider"
 export * from "./formElements/signature"
-export * from "./formElements/textarea"
+export * from "./formElements/textarea";
+export * from './Footer/index';
+export * from './Header/index';
+
 
 
 
