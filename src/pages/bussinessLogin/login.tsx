@@ -8,10 +8,10 @@ import {
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { styled } from "@mui/material/styles";
 import {
-  AmazonAccountCreationBtn,
+  AccountCreationBtn,
   ContinueBtn,
   Footer,
-  InputForAccount,
+  Input,
 } from "../../components";
 import Header from "../../components/Header";
 
@@ -72,7 +72,7 @@ export const Login = () => {
             >
               Email or mobile phone number
             </Typography>
-            <InputForAccount />
+            <Input />
             <ContinueBtn /> {/* button component creation  */}
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <ArrowRightIcon sx={{ color: "black" }} />
@@ -95,7 +95,7 @@ export const Login = () => {
               </Typography>
             </Divider>
           </Root>
-          <AmazonAccountCreationBtn /> {/* button component creation  */}
+          <AccountCreationBtn /> {/* button component creation  */}
         </Box>
       </Box>
 

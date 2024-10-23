@@ -27,7 +27,7 @@ export const Closebutton = () => {
   );
 };
 
-export const AmazonAccountCreationBtn = () => {
+export const AccountCreationBtn = () => {
   return (
     <MuiButton
       variant="contained"
