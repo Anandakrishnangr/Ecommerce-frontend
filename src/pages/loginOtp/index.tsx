@@ -22,7 +22,7 @@ export const LoginOtp = () => {
           sx={{
             border: "1px solid #ddd",
             width: "400px",
-           
+
             borderRadius: "8px",
             marginTop: "20px",
             marginBottom: "24px",
@@ -83,7 +83,7 @@ export const LoginOtp = () => {
             </Box>
             <Input />
             <AccountCreationBtn sx={{ backgroundColor: "#ffca00c7" }} />
-            <Typography component={"p"} sx={{fontSize: '13px'}}>
+            <Typography component={"p"} sx={{ fontSize: "13px" }}>
               By creating an account you agree to Amazon's{" "}
               <Link href="#" sx={{ color: "#1472cf", textDecoration: "none" }}>
                 Conditions of Use & Sale.

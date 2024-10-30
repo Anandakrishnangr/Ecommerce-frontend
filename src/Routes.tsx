@@ -5,19 +5,22 @@ import { Registration } from './pages/bussinessUsers/Registration'
 import { Login } from './pages/bussinessLogin/login';
 import { Password } from './pages/bussinessLogin/password';
 import { LoginOtp } from './pages/loginOtp'
+import { UpdateTaxDetail } from './pages/updateTaxDetails';
+
+
 
 
 export const Routes = () => {
   return (
     <div>
-       <ReactRoutes>
-        <Route path='/form-element' element={<FormElements/>}></Route>
-        <Route path='/registration' element = {<Registration/>}></Route>
-        <Route path='/login' element = {<Login/>}></Route>
-        <Route path='/password' element = {<Password/>}></Route>
-        <Route path='/loginotp' element = {<LoginOtp/>}></Route>
-
-       </ReactRoutes>
+      <ReactRoutes>
+        <Route path="/form-element" element={<FormElements />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/password" element={<Password />} />
+        <Route path="/loginotp" element={<LoginOtp />} />
+        <Route path='/updatetaxdetail' element={<UpdateTaxDetail />} />
+      </ReactRoutes>
     </div>
-  )
+  );
 }
