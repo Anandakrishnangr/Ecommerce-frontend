@@ -11,7 +11,7 @@ import {
   FormControl,
   FormControlLabel,
 } from "@mui/material";
-import Header from "../../components/Header";
+import Header from "../../_components/header";
 import { useState } from "react";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";

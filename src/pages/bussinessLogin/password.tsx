@@ -12,8 +12,8 @@ import {
   ContinueBtn,
   Footer,
   Input,
-} from "../../components";
-import Header from "../../components/Header";
+} from "../../_components";
+import Header from "../../_components/header";
 
 
 const Root = styled("div")(({ theme }) => ({

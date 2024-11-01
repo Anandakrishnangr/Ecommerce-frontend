@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Header from "../../components/Header";
+import Header from "../../_components/header";
 import { Box, Typography, Link } from "@mui/material";
-import { AccountCreationBtn, Input } from "../../components";
+import { AccountCreationBtn, Input } from "../../_components";
 
 export const LoginOtp = () => {
   const [number, useNumber] = useState(35254545);

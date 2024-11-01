@@ -8,8 +8,8 @@ export * from "./formElements/radio"
 export * from "./formElements/rangeslider"
 export * from "./formElements/signature"
 export * from "./formElements/textarea";
-export * from './Footer/index';
-export * from './Header/index';
+export * from './footer/index';
+export * from './header/index';
 
 
 

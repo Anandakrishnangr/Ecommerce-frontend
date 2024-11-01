@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonContained, ButtonOutlined, Calender, Checkbox, Closebutton, Dropdown, Fileupload, Input, Radio, Rangeslider, Signatrure, Textarea } from '../components'
+import { ButtonContained, ButtonOutlined, Calender, Checkbox, Closebutton, Dropdown, Fileupload, Input, Radio, Rangeslider, Signatrure, Textarea } from '../_components'
 
 export const FormElements = () => {
   return (
