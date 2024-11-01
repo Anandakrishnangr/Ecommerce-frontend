@@ -1,14 +1,12 @@
-import React from 'react'
-import { Routes as ReactRoutes, Route } from 'react-router-dom'
-import { FormElements } from './pages'
-import { Registration } from './pages/bussinessUsers/Registration'
-import { Login } from './pages/bussinessLogin/login';
-import { Password } from './pages/bussinessLogin/password';
-import { LoginOtp } from './pages/loginOtp'
-import { UpdateTaxDetail } from './pages/updateTaxDetails';
-
-
-
+import React from "react";
+import { Routes as ReactRoutes, Route } from "react-router-dom";
+import { FormElements } from "./pages";
+import { Registration } from "./pages/bussinessUsers/Registration";
+import { Login } from "./pages/bussinessLogin/login";
+import { Password } from "./pages/bussinessLogin/password";
+import { LoginOtp } from "./pages/loginOtp";
+import { UpdateTaxDetail } from "./pages/updateTaxDetails";
+import { TaxDetail } from "./pages/taxDetail";
 
 export const Routes = () => {
   return (
@@ -19,8 +17,9 @@ export const Routes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/password" element={<Password />} />
         <Route path="/loginotp" element={<LoginOtp />} />
-        <Route path='/updatetaxdetail' element={<UpdateTaxDetail />} />
+        <Route path="/updatetaxdetail" element={<UpdateTaxDetail />} />
+        <Route path="/taxdetails" element={<TaxDetail />} />
       </ReactRoutes>
     </div>
   );
-}
+};

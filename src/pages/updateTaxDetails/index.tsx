@@ -1,9 +1,20 @@
 import React from "react";
-import { Box, Typography,Link,List, Radio, RadioGroup, Collapse, ListItemButton, FormControl, FormControlLabel } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Link,
+  List,
+  Radio,
+  RadioGroup,
+  Collapse,
+  ListItemButton,
+  FormControl,
+  FormControlLabel,
+} from "@mui/material";
 import Header from "../../components/Header";
 import { useState } from "react";
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 
 export const UpdateTaxDetail = () => {
   const [open, setOpen] = React.useState(true);
@@ -57,26 +68,38 @@ export const UpdateTaxDetail = () => {
                   value="GSTIN number"
                   control={<Radio />}
                   label="I have GSTIN number"
+                  sx={{ fontSize: "15px" }}
                 />
                 <FormControlLabel
                   value="without GSTIN number"
                   control={<Radio />}
                   label="I do not have GSTIN number"
+                  sx={{ fontSize: "15px" }}
                 />
 
                 <ListItemButton onClick={handleClick}>
-                <FormControlLabel
-                  value="not GSTIN number"
-                  control={<Radio />}
-                  label="Need help with GST registration"
-                />
+                  <FormControlLabel
+                    value="not GSTIN number"
+                    control={<Radio />}
+                    label="Need help with GST registration"
+                    sx={{ fontSize: "15px" }}
+                  />
                   {open ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
 
                 <Collapse in={open} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
                     <ListItemButton sx={{ pl: 4 }}>
-                    <Link href="#" sx={{ color: "blue", textDecoration: 'none' }}>Avail 1-Click Launch Support</Link>
+                      <Link
+                        href="#"
+                        sx={{
+                          color: "blue",
+                          textDecoration: "none",
+                          fontSize: "14px",
+                        }}
+                      >
+                        Avail 1-Click Launch Support
+                      </Link>
                     </ListItemButton>
                   </List>
                 </Collapse>
